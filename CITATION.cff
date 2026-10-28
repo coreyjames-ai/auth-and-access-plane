@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: Cite this repository's report by its DOI.
+type: dataset
+title: "Auth and access plane: How commercial AI assistants and my own agents reach a private tool estate: OAuth, token validation, edge exposure and an operations layer"
+authors:
+  - given-names: Corey
+    family-names: James
+    orcid: https://orcid.org/0009-0008-7246-963X
+doi: 10.5281/zenodo.23735122
+date-released: 2026-10-28
+url: https://coreyjames.ai/systems/auth-and-access-plane/
+repository-code: https://github.com/coreyjames-ai/auth-and-access-plane
+license: CC-BY-4.0
+abstract: "How commercial AI assistants and my own agents reach a private tool estate: OAuth, token validation, edge exposure and an operations layer"

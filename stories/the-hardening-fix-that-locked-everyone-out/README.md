@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735122 (this page is a chapter of the system's report)  
 Systems: [Auth and access plane](https://github.com/coreyjames-ai/auth-and-access-plane)  
 Technologies: [Application security hardening and threat modelling](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/application-security-hardening-and-threat-modelling) · [Evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/evidence-gated-acceptance) · [FastAPI](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/fastapi) · [Identity and access management for AI agents](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/identity-and-access-management-for-ai-agents) · [JSON Web Token (JWT)](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/json-web-token-jwt) · [Microsoft Copilot Studio](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/microsoft-copilot-studio) · [Multi-vendor LLM integration](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/multi-vendor-llm-integration) · [NGINX](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/nginx) · [OAuth 2.0](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/oauth-2-0) · [Python](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/python) · [Redis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/redis) · [Site reliability engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/site-reliability-engineering) · [WebAuthn](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/webauthn) · [systemd](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/systemd)  
 Skills: [OAuth 2.0 and identity architecture](https://github.com/coreyjames-ai/portfolio/tree/main/skills/oauth-2-0-and-identity-architecture) · [evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/skills/evidence-gated-acceptance) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology)  
@@ -87,7 +88,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "The hardening fix that locked everyone out." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/
+Corey James. "The hardening fix that locked everyone out." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/ In: the Auth and access plane technical report, doi:10.5281/zenodo.23735122.
 
 ```bibtex
 @misc{coreyjames-the-hardening-fix-that-locked-everyone-out,
@@ -95,7 +96,8 @@ Corey James. "The hardening fix that locked everyone out." coreyjames.ai, 2026. 
   title = {The hardening fix that locked everyone out},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/auth-and-access-plane/tree/main/stories/the-hardening-fix-that-locked-everyone-out}
+  note = {GitHub copy: https://github.com/coreyjames-ai/auth-and-access-plane/tree/main/stories/the-hardening-fix-that-locked-everyone-out},
+  doi = {10.5281/zenodo.23735122}
 }
 ```
 

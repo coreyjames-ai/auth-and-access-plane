@@ -41,5 +41,8 @@
  "canonical": "https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/",
  "datePublished": "2026-10-28",
  "author": "Corey James",
- "github": "https://github.com/coreyjames-ai/auth-and-access-plane/tree/main/stories/the-hardening-fix-that-locked-everyone-out"
+ "github": "https://github.com/coreyjames-ai/auth-and-access-plane/tree/main/stories/the-hardening-fix-that-locked-everyone-out",
+ "doi": "10.5281/zenodo.23735122",
+ "doi_relation": "part-of",
+ "author_orcid": "https://orcid.org/0009-0008-7246-963X"
 }
