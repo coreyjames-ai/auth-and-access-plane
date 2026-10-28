@@ -1,0 +1,45 @@
+{
+ "url": "https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/",
+ "kind": "story",
+ "title": "The hardening fix that locked everyone out",
+ "subtitle": "Reversing my own security change within a day, because the threat model said a different control was the one that mattered",
+ "systems": [
+  "auth-and-access-plane"
+ ],
+ "technologies": [
+  "OAuth 2.0",
+  "Dynamic client registration (RFC 7591)",
+  "PKCE",
+  "Python",
+  "Redis",
+  "NGINX",
+  "Application security hardening"
+ ],
+ "stats": [
+  {
+   "value": "3",
+   "label": "holes the review found; the worst, anonymous registration with attacker-chosen redirects"
+  },
+  {
+   "value": "7",
+   "label": "acceptance probes, one or more for each fix"
+  },
+  {
+   "value": "24 h",
+   "label": "from adding the registration lock to reverting it"
+  }
+ ],
+ "lede": "A security review of my deliberately public OAuth endpoint found holes, the worst of them in client registration. I fixed all three, checked the fixes with explicit probes, and the next morning every AI assistant that used the endpoint could no longer authenticate. I re-ran the threat model. The registration lock had added friction without adding security, because the control that protects is the consent screen, where I log in and approve every grant. I reverted my own fix and wrote down why. The endpoint exists so that AI assistants, including commercial ones, can connect to my private tool estate.",
+ "quote": "The consent screen is the control. Registration is bookkeeping.",
+ "evidence": [
+  "Security incident judgment: I reverted my own registration lock within 24 h of adding it, after it locked every AI assistant out and the threat model showed consent was the control.",
+  "OAuth 2.0 and identity architecture: a deliberately public endpoint where AI assistants self-register as clients and a person approves every grant on the consent screen.",
+  "Security review triage: 3 findings fixed in severity order with minimal changes, each fix checked by acceptance probes, 7 in all.",
+  "Threat modelling for AI client access: a hostile registration shown to gain nothing unless a person approves that client on the consent screen."
+ ],
+ "problem": "governed-agents",
+ "canonical": "https://coreyjames.ai/stories/the-hardening-fix-that-locked-everyone-out/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/auth-and-access-plane/tree/main/stories/the-hardening-fix-that-locked-everyone-out"
+}

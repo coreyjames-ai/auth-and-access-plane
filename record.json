@@ -1,0 +1,46 @@
+{
+ "url": "https://coreyjames.ai/systems/auth-and-access-plane/",
+ "kind": "system",
+ "title": "Auth and access plane",
+ "subtitle": "How commercial AI assistants and my own agents reach a private tool estate: OAuth, token validation, edge exposure and an operations layer",
+ "systems": [],
+ "technologies": [
+  "OAuth 2.0",
+  "PKCE",
+  "JWKS",
+  "WebAuthn",
+  "Python",
+  "Edge workers",
+  "NGINX",
+  "systemd",
+  "Redis",
+  "Microsoft Copilot Studio"
+ ],
+ "stats": [
+  {
+   "value": "1 person",
+   "label": "approves every grant on the consent screen"
+  },
+  {
+   "value": "21 → 8",
+   "label": "tools: the full local surface, and the trimmed one shown to Copilot Studio"
+  },
+  {
+   "value": "2",
+   "label": "token issuers the gateway accepts: my server and Microsoft's platform"
+  }
+ ],
+ "lede": "My tool estate is private, and I wanted commercial AI assistants, including Microsoft Copilot Studio, to connect to it on my terms, alongside my own agents. The access plane is how they get in: an OAuth authorization server, gateway token validation against several issuers, an edge proxy that exposes a trimmed tool surface to a vendor's agent platform, and an operations layer that runs the estate. The consent screen is the control. Assistants self-register as OAuth clients, and a human approves each grant. A security review once found anonymous registration with attacker-chosen redirects, I locked registration down, and the next morning every assistant was locked out.",
+ "quote": "The lock looked like security; the consent step is security, because a human sees exactly which client is asking for exactly what.",
+ "evidence": [
+  "OAuth 2.0 and identity architecture: commercial AI assistants and my own agents admitted to a private tool estate as OAuth clients, with 1 person approving every grant on the consent screen.",
+  "Delegated authorization for AI agents: one gateway that accepts tokens from 2 issuers, my own authorization server and Microsoft's platform, before any tool is visible.",
+  "Microsoft Copilot Studio integration: an edge proxy that shows Copilot Studio a trimmed surface of 8 tools out of the 21 on the local surface, without opening the estate behind it.",
+  "Zero-trust and zero-inbound networking: a private tool estate reached by commercial assistants with no open inbound ports.",
+  "Security judgment under operational load: consent chosen over registration as the control point, and my own registration lock reverted the day after I added it."
+ ],
+ "canonical": "https://coreyjames.ai/systems/auth-and-access-plane/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/auth-and-access-plane"
+}
